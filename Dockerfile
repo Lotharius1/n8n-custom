@@ -1,8 +1,5 @@
-FROM docker.n8n.io/n8nio/n8n:latest
+FROM n8nio/n8n:1.93.0
 
 USER root
-
-# Update packages and install FFmpeg and other dependencies
-RUN apt-get update && apt-get install -y ffmpeg && rm -rf /var/lib/apt/lists/*
-
+RUN apk add --no-cache ffmpeg
 USER node
