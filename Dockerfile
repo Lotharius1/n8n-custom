@@ -1,4 +1,4 @@
-FROM n8nio/n8n:1.93.0
+FROM n8nio/n8n:stable
 
 USER root
 # ffmpeg + Tesseract (Deutsch) + Standardschrift
